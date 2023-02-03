@@ -1,0 +1,55 @@
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header > .row, .item {
+    flex-grow: 1;
+}
+
+header > .row.item {
+    align-items: center;
+}
+
+.nav-link, .nav-link:link, .nav-link:hover, .nav-link:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#nav > div:hover {
+    text-decoration: underline;
+}
+
+header > h1, h2 {
+    margin: 0;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 2em;
+}
+
+#nameplate {
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+#nameplate > h1 {
+    margin: 0;
+}
+
+#nameplate-link, #nameplate-link:link, #nameplate-link:hover, #nameplate-link:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#nameplate-link:hover {
+    text-decoration: underline;
+}
+
+#linkedin > a, #twitter > a {
+    justify-content: right;
+}

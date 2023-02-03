@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Load jQuery, just for dynamically loading the header. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Load local styles and scripts. -->
+    <link href="css/index.css" type="text/css" rel="stylesheet"/>
+    <script src="header.js"></script>
+
+    <!-- Load MathJax. -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- Load favicon, title, and other images. -->
+    <link href="favicon.ico" rel="icon" type="img"/>
+    <link rel="preload" as="image" href="./assets/img/twitter.png">
+    <link rel="preload" as="image" href="./assets/img/linkedin.png">
+    <title>Home</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="hparent"></div>
+
+        <!-- content unique to this page. -->
+        <div id="content">
+            <div id="intro" class="column">
+                <figure class="item column">
+                    <img width=400px src="assets/img/profile-kaya.jpeg"/>
+                    <figcaption style="margin-top: 1em; text-align: center;">
+                        <i style="font-size:0.9em;">
+                            On the way to the farmer's market with Kaya.
+                        </i>
+                    </figcaption>
+                </figure>        
+        
+                <div class="column item">
+                    <p>
+                        Hi, I'm Anthony! I'm a mathematics graduate student and teaching
+                        assistant at George Mason University studying algebraic graph theory,
+                        algorithms, and the mathematics of social choice. I got my
+                        undergraduate degrees in mathematics and computer science at the
+                        University of Iowa. I also work with the
+                        <a target=_blank href="https://mggg.org">MGGG Redistricting Lab</a> as a data
+                        scientist and contributor, researching the ideas that connect
+                        mathematics and <a target=_blank href="https://bit.ly/what-is-redistricting">redistricting</a>. 
+                    </p>
+        
+                    <p>
+                        <strong>If you're one of my students</strong> and need course
+                        information or to get in touch with me, head over to the
+                        <a href="courses.html">Courses page</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "header.css";
+@import "flex.css";
+@import "research.css";
+@import "contact.css";
+
+body {
+    background-color: white;
+    color: black;
+    font-family: "EB Garamond";     /* This font is awesome. */
+    font-size: 110%;                /* Make content more readable. */
+
+    overflow-y: scroll;             /* Ignore the width of the scrollbar. */
+}
+
+#wrapper {
+    margin: 5vh auto;
+    max-width: 600px;
+    min-width: 400px;
+}
+
+#content {
+    display: flex;
+    padding: 2em 0;
+    flex-direction: column;
+    margin: auto;
+    text-align: justify;
+
+    visibility: hidden;
+}
+
+a, a:link, a:active, a:visited {
+    color: #00693E; /* Dartmouth Green */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#hparent {
+    background-color: white;
+    margin: auto;
+}
+
+#intro {
+    animation: fadeIn 1s;
+    gap: 3em;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: 400;
+    width: 100%;
+}
+
+img {
+    height: auto;
+    display: block;
+    align-self: center;
+    border-radius: 1%;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
