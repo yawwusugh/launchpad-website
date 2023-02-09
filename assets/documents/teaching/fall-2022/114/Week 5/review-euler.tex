@@ -1,0 +1,54 @@
+
+\documentclass[11pt]{article}
+
+% Set the margins to be something normal.
+\usepackage[margin=1in]{geometry}
+
+% Fun lists!
+\usepackage{enumitem}
+\usepackage{textcomp}
+\setitemize{label=\textrightarrow, itemsep=0pt}
+
+% Math symbols.
+\usepackage{amsmath, amssymb, amsfonts}
+
+% No indents.
+\setlength\parindent{0pt}
+
+% Nice fonts :)
+\usepackage{tgschola}
+
+\begin{document}
+	{
+		\centering
+		\huge{Week 5 Recitation Problems} \\
+		\Large{MATH:114, Recitations 309 and 310} \\
+	}
+	\vspace{3em}
+	
+	{
+		\centering
+		\large{\textbf{Euler's Formula and Hyperbolic Functions}} \\
+	}
+	\vspace{3em}
+	
+	\textbf{Euler's Formula}, written as $$ e^{it} = \cos t + i \sin t, $$ where $i$ is the complex unit $i = \sqrt{-1}$, is an expression which establishes the relationship between continuous complex growth $(e^{it})$ and trigonometry in the complex plane ($\cos t + i \sin t$).
+	
+	\vspace{3em}
+	
+	1. Using an annotated picture or words, describe what Euler's formula tells us. \textit{(Hint: think about the complex unit circle --- that is, the circle centered at the origin which intersects the complex (vertical) axis at the points $(0,i)$ and $(0, -i)$ and the real (horizontal) axis at the points $(1,0)$ and $(-1, 0)$. If $t$ measures an angle counter-clockwise from the origin, where does each side of the equation end up?)}
+	
+	\vspace{0.25\textheight}
+	2. Verify \textbf{Euler's Identity} $$ e^{i \pi} = -1$$
+	
+	\newpage
+	3. (From a previous exam.) The derivative with respect to $t$ of the complex function $$e^t \cos(2t) + ie^t \sin(2t)$$ is $$ e^t \cos (2t) - 2e^t\sin(2t) + ie^t\sin(2t) + 2ie^t\cos(2t). $$ Show that this derivative is equal to the derivative with respect to $t$ of $e^{(1+2i)t}.$
+	
+	\vspace{0.2\textheight}
+	4. (From a previous exam.) If we define $$\sinh(t) = \frac{e^t-e^{-t}}{2} \hspace{2em} \text{and} \hspace{2em} \cosh{t} = \frac{e^t+e^{-t}}{2},$$
+	show that $$ (\cosh{t})^2 - (\sinh t)^2 = 1 $$ for all values of $t$.
+	
+	\vspace{0.2\textheight}
+	5. Using the definitions of $\cosh$ and $\sinh$ from Problem 4, show that $$\cosh(2t) = (\cosh t)^2 + (\sinh t)^2$$
+	
+\end{document}

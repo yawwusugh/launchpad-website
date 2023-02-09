@@ -1,0 +1,62 @@
+
+\documentclass[11pt]{article}
+
+% Set the margins to be something normal.
+\usepackage[margin=0.75in]{geometry}
+
+% Fun lists!
+\usepackage{enumitem}
+\usepackage{textcomp}
+\setitemize{label=\textrightarrow, itemsep=0pt}
+
+% Math symbols.
+\usepackage{amsmath, amssymb, amsfonts, nicefrac}
+
+% No indents.
+\setlength\parindent{0pt}
+
+% Nice fonts :)
+\usepackage{tgschola}
+
+\begin{document}
+	{
+		\centering
+		\huge{Week 13 Recitation Problems} \\
+		\Large{MATH:114, Recitations 309 and 310} \\[2em]
+	}
+	\normalsize{Names:} \hrulefill
+	\vspace{3em}
+	
+	A \textit{power series centered at $c$} is a series of the form $$ \sum_{n=1}^\infty a_n(x-c)^n, $$ where $a_n$ are terms in a sequence. We can also think of this series as the sum of the terms in the sequence $S$, where
+	\begin{align*} 
+		S &= \left\{a_1(x-c)^1, \ a_2(x-c)^2, \ a_3(x-c)^3, \dots, \ a_n(x-c)^n, \ a_{n+1}(x-c)^{n+1}, \dots \right\} \\
+		&= \{s_n\}_{n=1}^{\infty}
+	\end{align*}
+	Now, we want to figure out whether these series \textit{converge} or \textit{diverge}. To do so, we have two important tools: the \textit{ratio test} and the \textit{root test}. The \textit{ratio test} says that $$ \lim_{n \to \infty} \left\lvert \frac{s_{n+1}}{s_n} \right\rvert = L, \ \text{ if... } \begin{cases} L < 1 & \text{the series converges} \\ L > 1 & \text{the series diverges} \\ {L=1} & \text{we don't know.}\end{cases} $$
+	
+	\vspace{1em}
+	\dotfill \\[1em]
+	
+	1. Discuss with your group: why does the \textit{ratio} of the $n$\textsuperscript{th} and $(n+1)$\textsuperscript{th} terms as $n$ gets large help determine convergence? \textit{(Hint: to start, think about last week's geometric series.)}
+	
+	\vspace{6em}
+	2. Does the series $$ \sum_{n=1}^\infty \frac{(-1)^n(x-2)^n}{n} $$ converge or diverge? Does convergence or divergence depend on the value of $x$? Use the ratio test to find out.
+	
+	\newpage
+	We can also use another test called the \textit{root test}. This test says that $$ \lim_{n \to \infty} \sqrt[n]{|s_n|} = \lim_{n \to \infty} |s_n|^{\nicefrac 1n} = L, \ \text{ if... } \begin{cases} L < 1 & \text{the series converges} \\ L > 1 & \text{the series diverges} \\ {L=1} & \text{we don't know.}\end{cases} $$
+	
+	\vspace{1em}
+	\dotfill \\[1em]
+	
+	3. Discuss with your group: why does the $n$\textsuperscript{th} root of the terms as $n$ gets large help determine convergence? \textit{(Hint: try playing with the exponents!)}
+	
+	\vspace{6em}
+	4. Does the series $$ \sum_{n=1}^\infty \left(1+ \frac1n \right)^n x^n$$ converge or diverge? Use the root test to find out.
+	
+	\vspace{10em}
+	\dotfill \\[1em]
+	
+	5. Taylor series are a type of power series! Write out the Taylor series for the function $f(x) = e^x$ and find the values of $x$ where the Taylor series converges.
+
+	
+\end{document}

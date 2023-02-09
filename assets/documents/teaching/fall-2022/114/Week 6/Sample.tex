@@ -1,0 +1,119 @@
+
+\documentclass[10 pt]{article}
+%\usepackage{gmudissertation}
+\usepackage{amsthm}         
+\usepackage{graphicx}                    %   for imported graphics
+\usepackage{amsmath}                     %%
+\usepackage{amsfonts}                    %%  for AMS mathematics
+\usepackage{amssymb}                     %%             
+\usepackage[normalem]{ulem}              %   a nice standard underline package
+\usepackage[noadjust,verbose,sort]{cite} %   arranges reference citations neatly
+\usepackage{setspace}                    %   for line spacing commands
+\usepackage{lmodern}
+\usepackage{verbatim}
+\usepackage{bm}
+\usepackage{comment}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tikz}
+\usepackage{mathtools}
+\usepackage{mhchem}
+%\usepackage{cite}
+
+\newcommand{\verteq}{\rotatebox{90}{$\,=$}}
+\newcommand{\equalto}[2]{\underset{\scriptstyle\overset{\mkern4mu\verteq}{#2}}{#1}}
+
+\addtolength{\oddsidemargin}{-1.1in}
+\addtolength{\evensidemargin}{-1.5in}
+\addtolength{\textwidth}{2.3in}
+
+\addtolength{\topmargin}{-1.1in}
+\addtolength{\textheight}{2in}
+\begin{document}
+{\Large\bf{THE GREATEST THING YOU WILL DO ALL WEEK\#11 }}
+\begin{center}
+	\Large{  MATH 114 - CALCULUS II -  SPRING 2020}
+\end{center}
+{ \bf Professor/TA :} \underline{\hspace{ 5cm}} \hspace{1 cm} {\bf Sec:} \underline{\hspace{ 4.7cm}}
+\vspace{0.3 cm}\\
+{\bf FULL NAME:} \ \underline{\hspace{ 4.9cm}} \hspace{ 1 cm}
+{\bf Partners:} \underline{\hspace{ 4cm}}
+\vspace{1 cm}\\
+
+
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.01pt}}
+\textbf{Approximating functions using polynomials.}\\
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.01pt}}
+
+\begin{itemize}
+	\item[(A)] Let us first do LINEAR approximations. We want to approximate the function $g(x) = e^x$ about $x = 0$.
+\end{itemize}
+	\begin{minipage}{0.55\textwidth}
+	\begin{itemize}
+\item[1)] Deliberate with your group about how you might approximate the function $g(x) = e^x$ about $x = 0$. Explain your thinking.
+\vspace{ 3 cm}
+\item[(2)] Use one of the discussed methods to approximate the
+function using a line $L(x) = a_0 + a_1x$. Draw the linear
+approximation $L(x)$ on the graph.
+%\vspace{ 2 cm}
+\end{itemize}
+\end{minipage}
+\begin{minipage}{0.7 \textwidth}
+	\includegraphics[scale=0.6]{12_Graph_1.png}
+\end{minipage}
+\begin{itemize}
+	\vspace{ 2 cm}
+\item[(3)]Find a formula for the tangent line of an arbitrary function $f(x)$ about at the point $x = 0$.
+\vspace{ 3 cm}
+\end{itemize}
+\begin{itemize}
+	\item[(B)] Let us now tackle QUADRATIC approximations.
+	\begin{itemize}
+		\item[1)] Let us find the quadratic $Q(x) = a_0 + a_1 x + a_2 x^2$ that approximates the function $g(x) = e^x$ around $x = 0$.
+		\end{itemize}
+\begin{itemize}
+\item[(i)] Match function values:\\
+\includegraphics[scale=0.5]{12_Pic_1.png}
+%\tikz[baseline=0.6ex]\draw (0,0) rectangle (2cm,3ex) \tikz[baseline=0.6ex]\draw (0,0) rectangle (2cm,3ex)
+\item[(ii)] Match tangents:\\
+\includegraphics[scale=0.5]{12_Pic_2.png}
+\item[(iii)] Match concavity:\\
+\includegraphics[scale=0.5]{12_Pic_3.png}
+\end{itemize}
+
+\begin{minipage}{0.5 \textwidth}
+\begin{itemize}
+\item[2)] Finally, $Q(x)=$ \tikz[baseline=0.6ex]\draw (0,0) rectangle (5 cm,4ex);\\
+
+Use these results to graph the quadratic Q(x) (make
+sure to match location, slope and concavity!).
+\item[3)] Find a formula for the quadratic approximation of an arbitrary
+function $f(x)$ about the point $x=0$.
+\vspace{ 2 cm}
+	\end{itemize}
+\end{minipage}
+\begin{minipage}{0.7 \textwidth}
+	\includegraphics[scale=0.6]{12_Graph_1.png}
+\end{minipage}
+(C) Complete the following table. Which method provides the best approximation? Why?\\
+
+\begin{tabular}{|p{5.5 cm}|p{5.5 cm}|p{5.5 cm}|}
+	\hline
+	\hspace{ 2 cm}Functions  & \hspace{ 1.5 cm} Value at $x=1$ & \hspace{ 2 cm}Error \\
+	\hline
+	$g(x)=e^x$ & \hspace{ 2 cm} $2.71828$ &  \\
+	\hline
+	$L(x)=$ & & \\
+	\hline
+	$Q(x)= $ & & \\
+	\hline 
+\end{tabular}
+\vspace{0.1 cm}\\
+
+(D) Find a cubic $[C(x)=a_0+a_1x+a_2x^2+a_3x^3]$ approximation for $g(x)=e^x$ at $x=0$. \\
+\vspace{ 4 cm}
+
+(E) Extra time: Discuss how you could generalize this to a polynomial of degree $n$ $\bigg[
+P(x)=\sum\limits_{i=0}^na_ix_i\bigg]$ approximation at $x=0$.
+\end{itemize}
+\end{document}

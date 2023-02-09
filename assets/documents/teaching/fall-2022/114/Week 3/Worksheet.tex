@@ -1,0 +1,64 @@
+
+\documentclass[11pt]{article}
+
+% Set the margins to be something normal.
+\usepackage[margin=1in]{geometry}
+
+% Fun lists!
+\usepackage{enumitem}
+\usepackage{textcomp}
+\setitemize{label=\textrightarrow, itemsep=0pt}
+
+% Math symbols.
+\usepackage{amsmath, amssymb, amsfonts, nicefrac}
+
+\newcommand{\pp}[1]{#1^{\prime}}
+
+% No indents.
+\setlength\parindent{0pt}
+\setlength\parskip{1em}
+
+% Nice fonts :)
+\usepackage{tgschola}
+
+\begin{document}
+	\thispagestyle{empty}
+	{
+		\centering
+		\huge{Week 3 Recitation Problems} \\
+		\Large{MATH:114, Recitations 309 and 310} \\
+	}
+	\vspace{3em}
+	1. Let $$f(x) = \frac{1}{2x-1}.$$ Compute the surface area of the solid generated when $f$ is rotated around the $x$ axis where $x$ is between $\nicefrac 34$ and $4$.
+	
+	\textbf{Solution}: Start by taking the first derivative of $f$:
+	\begin{align*}
+		\pp f(x) &= \frac{d}{dx}\left(\frac{1}{2x-1}\right) \\
+		&= \frac{-1}{(2x-1)^2}
+	\end{align*}
+	
+	Then, we can use the surface area formula:
+	\begin{align*}
+		S &= \int_{-\frac 34}^4 2\pi f(x) \sqrt{1 + (\pp f(x))^2} \\
+		&= 2\pi \int_{-\frac 34}^4 \frac{1}{2x-1} \sqrt{1 + \left(\frac{-1}{(2x-1)^2}\right)^2} \\
+		&= 2\pi \int_{-\frac 34}^4 \frac{1}{2x-1} \cdot \int_{-\frac 34}^4 \sqrt{1^2 + \left(\frac{-1}{(2x-1)^2}\right)^2} \\
+		&= 2\pi \int_{-\frac 34}^4 \frac{1}{2x-1} \cdot \int_{-\frac 34}^4 \sqrt{\left(1 + \frac{-1}{(2x-1)^2}\right)^2} \\
+		&= 2\pi \int_{-\frac 34}^4 \frac{1}{2x-1} \cdot \int_{-\frac 34}^4\left(1 + \frac{-1}{(2x-1)^2}\right) \\
+		&= 2\pi \cdot \ln(2x-1) \cdot \left. \left(x + \frac{1}{2(2x-1)}\right)\right\rvert^4_{\nicefrac 34} \\
+		&= \frac{221 \ln(\pi)}{4}
+	\end{align*}
+	so we have found the surface area of our solid.
+	
+	\newpage
+	2. Plot the functions $$ f(x) =x^3, \ g(x) = \sqrt[3]{x}.$$ Rotate the area between $f$ and $g$ around the $x$ axis to form a solid of rotation. Set up (but do not compute) two integrals to find the volume of the solid.
+	
+	\vspace{15em}
+	
+	3. Using $f$ and $g$ from \#2, set up (but do not compute) an integral to find the surface area of the solid. Remember that the expression used to find the surface area of a solid is $$S = \int_a^b 2\pi \cdot h(x) \cdot \sqrt{1 + (\pp h(x)^2)}\ dx.$$ How does this integral compare to the integral you set up to compute the volume using the \textit{shell} method? Come up with a geometric explanation (a picture counts!).
+
+	
+	\vspace{15em}
+	
+	4. Let $$f(x) = \frac 12 x^2 - \frac14 \ln (x),$$ and find the length of the curve for $2 \leq x \leq 4$.
+	
+\end{document}
