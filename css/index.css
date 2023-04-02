@@ -4,6 +4,7 @@
 @import "flex.css";
 @import "research.css";
 @import "contact.css";
+@import "teaching.css";
 
 body {
     background-color: white;
@@ -44,8 +45,11 @@ a:hover {
 }
 
 #intro {
-    animation: fadeIn 1s;
     gap: 3em;
+}
+
+.animate {
+    animation: fadeIn 1s;
 }
 
 .title {
