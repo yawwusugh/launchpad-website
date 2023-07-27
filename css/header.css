@@ -28,7 +28,7 @@ header > h1, h2 {
 
 #nav {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: center;
     gap: 2em;
 }
